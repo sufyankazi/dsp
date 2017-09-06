@@ -19,7 +19,17 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > show current working directory path: **pwd**
+ creating a directory: **mkdir**
+ deleting a directory: **rmdir**
+ creating a file using `touch` command: **touch mytextfile.txt**
+ deleting a file: **rm**
+ renaming a file: **mv originalpath__filename new_path_filename**
+ listing hidden files: **ls -a**
+ copying a file from one directory to another: **mv filepath/name newfilepath/name**
+ 
+ remove a directory with files: **rm -t directoryname**
+ list files and sort by size: **ls -lS**
 
 ---
 
@@ -34,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls`  : lists visible files in working directory
+`ls -a`  : lists hidden files and visible files in wd
+`ls -l`  : lists visible files with persmissions in wd
+`ls -lh`  : lists visible files with sizes in human readable formats
+`ls -lah`  : lists visible and hidden files with sizes in human readable formats
+`ls -t`  : lists visible files sorted by date modified 
+`ls -Glp`  : lists visible files in long format with slashes added to directories without group names
 
 ---
 
@@ -42,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -R **lists files displays subdirectories**
+ ls -lu **lists files ordered by order accessed**
+ ls  -m **lists files as a comma separated list**
+ ls -F **lists files with flags**
+ ls -i **lists files with inodes**
 
 ---
 
@@ -50,7 +70,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs uses text from a standard text input and executes it as a command. For example: **xargs find -name
+*.py** would find files that ended with file extension py. 
 
  
 
