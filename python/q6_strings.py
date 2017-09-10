@@ -18,9 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
-
+    if count < 10:
+        FString=("Number of donuts: " + str(count))
+    else:
+        FString= "Number of Donuts: many"
+    return FString
 def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
@@ -37,7 +39,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        FString=''
+    else:
+        FString=(s[0]+s[1]+s[-2]+s[-1])
+    return FString
 
 
 def fix_start(s):
@@ -56,8 +62,12 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
-
+    s=list(s)
+    for x in range(1,len(s),1):
+        if s[x]==s[0]:
+            s[x]='*'
+    s=''.join(s)
+    return s
 
 def mix_up(a, b):
     """
@@ -74,8 +84,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
-
+    FString=b[0:2]+a[2:]+' '+a[0:2]+b[2:]
+    return FString
 
 def verbing(s):
     """
@@ -86,15 +96,18 @@ def verbing(s):
 
     >>> verbing('hail')
     'hailing'
-    >>> verbing('swiming')
+    >>> verbing('swimming')
     'swimingly'
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if s.endswith('ing'):
+        s=s+'ly'
+    elif len(s) >=3:
+        s=s+'ing'
+    return s
 
-
-def not_bad(s):
+def not_bad(a):
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -111,7 +124,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if a.find('not')<a.find('bad'):
+        AChanged=a[:a.find('not')]+'good'+a[a.find('bad')+3:]
+    else:
+        return a
+
+    return AChanged
 
 
 def front_back(a, b):
@@ -130,4 +148,19 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a) % 2 == 0:
+        AFront=a[:int(len(a)/2)]
+        ABack=a[int(len(a)/2):]
+    else:
+        AFront=a[:int(len(a)/2)+1]
+        ABack=a[int(len(a)/2)+1:]
+    if len(b) % 2 == 0:
+        BFront=b[:int(len(b)/2)]
+        BBack=b[int(len(b)/2):]
+    else:
+        BFront=b[:int(len(b)/2)+1]
+        BBack=b[int(len(b)/2)+1:]
+    FString=(AFront+BFront+ABack+BBack)
+    return(FString)
+mystring=fix_start('aardvark')
+print(mystring)
