@@ -33,5 +33,12 @@ for title in SetTT:
     print('the number of \"'+title+'\" is '+str(TitleTypes.count(title))+'.')
 print("the list of emails is: ")
 print(Emails)
+print("the number of unique email domains is "+str(len(set(EmailDomains)))+".")
 print("the unique email domains are: ")
 print(set(EmailDomains))
+
+FilePath="emails.csv"
+
+csv=open(FilePath, "w")
+for email in Emails:
+    csv.write(email+"\n")#writes emails and \n creates new line
