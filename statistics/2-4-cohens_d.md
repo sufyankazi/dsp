@@ -11,3 +11,5 @@
 >>the mean pregnancy length of other babies was 38.52291446673706 weeks.
 
 >>the difference between the pregnancy lengths was 0.07803726677754952.
+
+[Code is here](statistics/code/Stats1.py)
