@@ -12,4 +12,4 @@
 
 >>the difference between the pregnancy lengths was 0.07803726677754952.
 
-[Code is here](/code/Stats1.py)
+[Code is here](statistics/Stats1.py)
