@@ -68,7 +68,13 @@ $ git clone https://github.com/AllenDowney/ThinkStats2.git
 Cohen's D is an example of effect size.  Other examples of effect size are:  correlation between two variables, mean difference, regression coefficients and standardized test statistics such as: t, Z, F, etc. In this example, you will compute Cohen's D to quantify (or measure) the difference between two groups of data.   
 
 You will see effect size again and again in results of algorithms that are run in data science.  For instance, in the bootcamp, when you run a regression analysis, you will recognize the t-statistic as an example of effect size.
-
+>>the mean weight of first babies is 7.201094430437772 lbs
+>>the mean weight of other babies is 7.325855614973262 lbs
+>>the Cohen's d between the two sets is -0.08864367587767744
+>>the mean pregnancy length of first babies was 38.60095173351461 weeks
+>>the mean pregnancy length of other babies was 38.52291446673706 weeks
+>>the difference between the pregnancy lengths was 0.07803726677754952
+---
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
